@@ -15,15 +15,22 @@ There are no dependencies, no package manager, and no server required.
 
 ## Git Workflow
 
-Every change must be committed and pushed to GitHub:
+**Commit and push after every meaningful unit of work** — do not batch up changes across multiple tasks. This keeps GitHub in sync at all times so work is never lost and any state can be reverted.
+
+When to commit:
+- After creating or completing a new feature
+- After any bug fix
+- After updating or creating any file (including this one)
 
 ```bash
 git add <file>
-git commit -m "descriptive message"
+git commit -m "short present-tense summary of what changed and why"
 git push
 ```
 
 Remote: https://github.com/MikeKraus-dev/ClaudeCodeTest
+
+Good commit messages are specific: `"Add high score persistence to Pixel Siege"` not `"update game"`. Always include the `Co-Authored-By` trailer for Claude-assisted commits.
 
 ## Project Structure
 
